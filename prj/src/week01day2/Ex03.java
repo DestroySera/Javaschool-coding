@@ -4,13 +4,14 @@ import java.util.Scanner;
 
 public class Ex03 {
 	public static void main(String[] args) {
-		String sawonnum;
-		int worktime = 0;
-		int money = 0;
+		String sawonnum; // 사원번호
+		int worktime = 0; // 일한 시간
+		int money = 0; // 임금
 
-		int tax = 0;
-		int allmoney = 0;
-		int givemoney = 0;
+		int tax = 0; // 세금
+		int allmoney = 0; // 총임금
+		int givemoney = 0; //주는 임금 
+		
 
 		final int MAX = 2;
 

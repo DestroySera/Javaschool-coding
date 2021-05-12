@@ -9,17 +9,17 @@ public class Ex04 {
 		int count = 0;
 		Scanner sc = new Scanner(System.in);
 
-		while (true) {
+		//while (true) {
 			System.out.println("수를 입력하세요.");
 			int a = sc.nextInt();
 
-			if (a == 0) {
-				System.out.println("프로그램을 종료합니다.");
-				break;
-			}
+//			if (a == 0) {
+//				System.out.println("프로그램을 종료합니다.");
+//				break;
+//			}
 			for (int i = 1; i <= a; i++) {
 				if (a % i == 0) {
-					arr[count] = i;// 약수 sum에 할당
+					arr[count] = i;// 약수 arr에 할당
 					System.out.print(arr[count] + " ");
 					count++;
 				}
@@ -27,10 +27,17 @@ public class Ex04 {
 
 			System.out.print("\n");
 
-			for (int j = 0; j < count; j++) {
-				sum++;
+			if (arr[count] == a) { 
+				for (int j = 0; j <= count; j++) {
+					sum += arr[j];
+				}
+				
 			}
-			System.out.println("약수의 갯수 : " + sum);
-		}
+			System.out.println(sum);
+//			for (int j = 0; j < count; j++) {
+//				sum++;
+//			}
+//			System.out.println("약수의 갯수 : " + sum);
+		//}
 	}
 }
